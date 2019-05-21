@@ -1,41 +1,50 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-	background: orange;
+body {
+  background: orange;
 }
 
-.wrapper{
-	max-width: 800px;
-	background: lightgray;
-	margin: auto;
-	/* padding: 20px; */
-
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-top: 30px;
+.wrapper {
+  max-width: 800px;
+  background: lightgray;
+  margin: auto;
+  /* padding: 20px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
 }
 
-
-
-img{
-	width: 100%;
+img {
+  width: 100%;
 }
 
-.box{
-
-	min-height: 300px;
+.box {
+  min-height: 300px;
 }
 
-#red{
-	background: red;
+#red {
+  background: red;
 }
 
-#blue{
-	background: blue;
+#blue {
+  background: blue;
 }
 
-#green{
-	background: green;
+#green {
+  background: green;
 }
+
+.float {
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* clear kommt in den wrapper, würde es zu float kommen, würde nach jedem div float gecleart und sie stünden nciht nebeneinander\
